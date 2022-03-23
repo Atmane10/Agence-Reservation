@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="contact">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="form-group">
+                <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <button type="submit" class="btn form-btn">Send a message</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.textarea{
+    min-height:220px;
+    resize:none;
+}
+.form-btn{ 
+   background: red;
+   color:#fff;
+}
+.form-btn:hover{ 
+   background: tomato;
+   color:#fff;
+}
+.contact{
+    margin: 80px 350px;
+}
+</style>
+
+
+{% endblock %}
